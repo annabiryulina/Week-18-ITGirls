@@ -1,0 +1,64 @@
+.form {
+    font-family: Verdana;
+    display: grid;
+    width: 27%;
+    grid-template-areas: 
+      "head head head"
+      "input input add" 
+      "taskheader taskheader taskheader"
+      "noTasks noTasks noTasks"
+      "list list list"
+      "clear clear clear";
+    grid-gap: 1px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  
+  #header {
+    grid-area: head;
+  }
+  
+  #input {
+    border-color: white;
+    width: 300px;
+    height: 27px;
+    grid-area: input;
+    border-color: khaki;
+    border-radius: 60px 10px;
+    text-align: center;
+  }
+  
+  #add {
+    width: 150px;
+    height: 40px;
+    grid-area: add;
+    justify-self: end;
+    background-color: khaki;
+    border-color: khaki;
+    border-radius: 60px 10px;
+  }
+  
+  #list {
+    grid-area: list;
+    margin-top: -135px;
+  }
+  
+  #noTasks {
+    color: grey;
+    grid-area: noTasks;
+    display: block;
+    justify-self: center;
+  }
+  
+  #taskheader {
+    grid-area: taskheader;
+  }
+  
+  #clear {
+    grid-area: clear;
+    width: 150px;
+    height: 40px;
+    justify-self: end;
+    border-radius: 60px 10px;
+  }
+  
+  
